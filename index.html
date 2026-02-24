@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dhivya Bharathi | Student</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Inter',sans-serif;
+}
+
+body{
+  background:#0f0f0f;
+  color:white;
+  line-height:1.6;
+}
+
+.container{
+  width:85%;
+  max-width:1200px;
+  margin:auto;
+}
+
+header{
+  padding:25px 0;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:sticky;
+  top:0;
+  background:#0f0f0f;
+  z-index:1000;
+}
+
+
+.logo{
+  font-weight:800;
+  font-size:22px;
+  letter-spacing:2px;
+}
+
+nav a{
+  color:#aaa;
+  text-decoration:none;
+  margin-left:25px;
+  transition:0.3s;
+}
+
+nav a:hover{
+  color:#00f7ff;
+}
+
+.hero{
+  min-height:90vh;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:wrap;
+}
+
+.hero-content{
+  max-width:600px;
+}
+
+.hero-content h1{
+  font-size:48px;
+  font-weight:800;
+}
+
+.hero-content span{
+  color:#00f7ff;
+}
+
+.hero-content p{
+  margin-top:20px;
+  color:#aaa;
+}
+
+.hero img{
+  width:280px;
+  height:280px;
+  object-fit:cover;
+  border-radius:50%;
+  border:4px solid #00f7ff;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:30px;
+  padding:12px 28px;
+  background:#00f7ff;
+  color:black;
+  text-decoration:none;
+  font-weight:600;
+  border-radius:6px;
+  transition:0.3s;
+}
+
+.btn:hover{
+  transform:translateY(-3px);
+  background:white;
+}
+
+.section{
+  padding:100px 0;
+}
+
+.section h2{
+  font-size:35px;
+  margin-bottom:40px;
+  color:#00f7ff;
+}
+
+/* Projects */
+.projects{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:30px;
+}
+
+.card{
+  background:#1a1a1a;
+  padding:20px;
+  border-radius:15px;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+  background:#222;
+}
+
+.card img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+  border-radius:10px;
+  margin-bottom:15px;
+}
+
+.card h3{
+  font-size:20px;
+  margin-bottom:12px;
+  color:#00f7ff;
+  font-weight:700;
+}
+
+.card p{
+  color:#aaa;
+  font-size:14px;
+}
+
+/* Skills */
+.skills{
+  display:flex;
+  flex-wrap:wrap;
+  gap:15px;
+}
+
+.skills span{
+  background:#1a1a1a;
+  padding:8px 15px;
+  border-radius:20px;
+  font-size:14px;
+}
+
+footer{
+  text-align:center;
+  padding:40px 0;
+  background:#111;
+  color:#777;
+}
+
+@media(max-width:768px){
+  .hero{
+    text-align:center;
+    justify-content:center;
+  }
+  .hero img{
+    margin-top:30px;
+  }
+  .hero-content h1{
+    font-size:32px;
+  }
+}
+.hero-social{
+  margin-top:20px;
+  display:flex;
+  gap:15px;
+  flex-wrap:wrap;
+}
+
+.hero-social a{
+  padding:10px 20px;
+  background:#1a1a1a;
+  color:#00f7ff;
+  border:1px solid #00f7ff;
+  border-radius:6px;
+  text-decoration:none;
+  font-weight:600;
+  transition:0.3s;
+}
+
+.hero-social a:hover{
+  background:#00f7ff;
+  color:black;
+}
+.contact-links a{
+  color:#00f7ff;   /* Only link text will be green */
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.contact-links a:hover{
+  color:white;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+  <div class="logo">DHIVYA Bharathi T</div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Hi, I'm <span>Dhivya Bharathi</span><br>Computer Science Student</h1>
+    <p>
+      Computer Science Engineering student with strong foundations in Java and DBMS, currently
+       learning full-stack development and exploring Node.js, Express and APIs, with a
+        passion for building real-world web and backend applications. Enthusiastic about 
+        problem-solving and continuous skill development through workshops, internships, 
+        and self-learning.
+    </p>
+    <div class="hero-social">
+  <a href="https://github.com/Dhivyabharathi132" target="_blank">GitHub</a>
+  <a href="https://www.linkedin.com/in/dhivya-bharathi-t-96b553318" target="_blank">LinkedIn</a>
+  <a href="https://leetcode.com/u/dhivyabharathi_02/" target="_blank">LeetCode</a>
+</div>
+  </div>
+
+  <!-- Make sure profile.jpg is in same folder -->
+  <img src="dhivya.JPG" alt="Dhivya Bharathi T Profile Photo">
+</section>
+
+<section class="section" id="projects">
+  <h2>Projects</h2>
+
+  <div class="projects">
+
+    <div class="card">
+      <img src="project1.jpeg" alt="Digital Employment Bridge">
+      <h3>Digital Employment Bridge</h3>
+      <p>
+       Project SAHAAYA is a digital employment platform concept connecting Below Poverty Line (BPL) citizens with municipal and government job opportunities.
+Developed using React.js, Node.js, Express, and MySQL, with AI-based skill and GPS job matching and IVRS support.
+Designed to improve transparency, reduce middlemen interference, and promote fair public hiring.
+Selected at college level in Smart India Hackathon (SIH) 2025 for its social-impact innovation.
+      </p>
+    </div>
+
+    <div class="card">
+      <img src="project2.jpeg" alt="Voice Bot">
+      <h3>Multilingual Voice Bot</h3>
+      <p>
+        Developed a voice-based conversational bot using Python to enable interactive communication.
+Integrated Speech Recognition and Text-to-Speech APIs for real-time voice input and output processing.
+Designed the system to support multilingual interaction and enhance user accessibility.
+      </p>
+    </div>
+
+    <div class="card">
+      <img src="project3.jpeg" alt="City connect">
+      <h3>City connect</h3>
+      <p>
+        Developed a real-time bus tracking web application to monitor bus locations and improve commute transparency.
+Implemented live location updates using GPS data integration and dynamic map rendering.
+Designed a user-friendly interface to track arrival times and reduce waiting uncertainty.
+Focused on practical problem-solving, backend connectivity, and responsive frontend development.
+Selected at college level in Smart India Hackathon (SIH) 2025 
+
+        
+      </p>
+    </div>
+    
+    <div class="card">
+      <img src="project4.jpeg" alt="Mobile App for Direct Market ">
+      <h3>Mobile App for Direct Market</h3>
+      <p>
+        Developed a full-stack mobile web application using JavaScript and Python to provide direct market access for farmers.
+Implemented real-time market price updates and transparent transaction workflows.
+Designed features to enhance negotiation power, streamline supply chains, and improve profit margins.
+Ensured usability for rural users through a simple interface and support for basic internet connectivity.
+
+        
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="section" id="skills">
+  <h2>Technical Skills</h2>
+
+  <div class="skills">
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+    <span>Python</span>
+    <span>Java</span>
+    <span>Node.js</span>
+    <span>Express.js</span>
+    <span>SQL</span>
+    <span>PostgreSQL (Basic)</span>
+    <span>REST APIs</span>
+    <span>Git & GitHub</span>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <h2>Contact</h2>
+
+  <div class="contact-links">
+   <div class="contact-links">
+  <p>Email: 
+    <a href="mailto:tdhivyabharathi1302@gmail.com">
+      tdhivyabharathi1302@gmail.com
+    </a>
+  </p>
+
+  <p>GitHub: 
+    <a href="https://github.com/Dhivyabharathi132" target="_blank">
+      github.com/Dhivyabharathi132
+    </a>
+  </p>
+
+  <p>LinkedIn: 
+    <a href="https://www.linkedin.com/in/dhivya-bharathi-t-96b553318" target="_blank">
+      dhivya-bharathi-t-96b553318
+    </a>
+  </p>
+
+  <p>LeetCode: 
+    <a href="https://leetcode.com/u/dhivyabharathi_02/" target="_blank">
+      dhivyabharathi_02
+    </a>
+  </p>
+</div>
+  <p>Location: Chennai, Tamil Nadu</p>
+</section>
+
+  
+
+</div>
+
+<footer>
+  © 2026 Dhivya Bharathi.
+</footer>
+
+</body>
+</html>
